@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GAMES104/Lecture 2 引擎架构分层.md",
+                "file": "Game Engine Architecture/第1章 导论/1.6 运行时引擎架构.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 2 引擎架构分层"
+              "title": "1.6 运行时引擎架构"
             }
           }
         ]
@@ -170,9 +170,9 @@
   },
   "active": "f04041e085f3c48d",
   "lastOpenFiles": [
+    "GAMES104/Lecture 2 引擎架构分层.md",
     "GAMES104/Pictures of GAMES104/2.4.Tick.png",
     "GAMES104/Pictures of GAMES104/2.3.ResourceManager.png",
-    "GAMES104/Lecture 2 引擎架构分层.md",
     "GAMES104/Pictures of GAMES104/2.2.CrossReference.png",
     "GAMES104/Pictures of GAMES104/1.1.OfflineResourceImporting.png",
     "Welcome.md",
