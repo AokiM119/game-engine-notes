@@ -108,8 +108,37 @@ Blur the boundary between engine and the game.
 Many systems in game engine are built for parallelism.
 未来的趋势：将每个任务进行原子化，可以在各个线程上满满的排列。难的是在运行的dependency上。
 
-## 4 平台层
+## 4 核心层、平台层 | Core & Platform Layer
+Core核心层会包括一些上层（如功能层）高频率调用的、偏底层的功能库，例如数学库、STD库等。
+在游戏引擎中，这些库很有可能为了提高实时计算的效率而进行重写。
+- Math Library
+- Data Structure and Containers
+- Memory Management (CPU的缓存空间往往是卡点)
+	- Major bottlenecks of game engine performance
+	- Reduce cache miss
+	- Memory alignment
+Core layer is the foundation of Game Engine. 
+![[2.5.CoreLayer.png]]
 
-## 5 工具层
+平台层
+Compatibility of different platform, provides platform-independent services or information for upper layers.
+不同的硬件平台使用的文件读取方式、图形SDK可能都不一样。
+例如Render Hardware Interface - RHI，重新定义的一层图形API：
+- Transparent different GPU architecture and SDK
+- Automatic optimization of target platform
+## 5 工具层 | Tool Layer
+
+Allow anyone to create game:
+- Level editor
+- Logical editor
+- Shader editor
+- Animation editor
+- UI editor
+工具层的开发框架和引擎底层结构没太大关系，它的核心在于服务于用户对游戏内容进行引擎内编辑。
 
 ## 6 为什么要采用分层架构
+
+Decoupling and reducing complexity.
+Respond to evolving demands
+
+面对每一个功能需求的时候，要判断这个需求属于哪一层。以及在各个层需要做哪些改动。
