@@ -13,15 +13,68 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Game Engine Architecture/第1章 导论/1.6 运行时引擎架构.md",
+                "file": "GAMES101&202/101 Homework Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.6 运行时引擎架构"
+              "title": "101 Homework Note"
+            }
+          },
+          {
+            "id": "db264accb34afa4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GAMES101&202/202 Homework Note.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "202 Homework Note"
+            }
+          },
+          {
+            "id": "cb4c3e49b6ee4d42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GAMES104/Lecture 21 Lumen全局光照方案.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lecture 21 Lumen全局光照方案"
+            }
+          },
+          {
+            "id": "2abc6cccd7bd52ca",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "GAMES101/Pics/hw3.3.png"
+              },
+              "icon": "lucide-image",
+              "title": "hw3.3"
+            }
+          },
+          {
+            "id": "b2f47ad2ac8c3db0",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "GAMES101/Pics/hw3.png"
+              },
+              "icon": "lucide-image",
+              "title": "hw3"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 223.5
   },
   "right": {
     "id": "6030e2c335f943c0",
@@ -168,20 +221,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f04041e085f3c48d",
+  "active": "cb4c3e49b6ee4d42",
   "lastOpenFiles": [
-    "GAMES104/Lecture 2 引擎架构分层.md",
-    "Game Engine Architecture/第1章 导论/1.6 运行时引擎架构.md",
-    "GAMES104/Pictures of GAMES104/2.4.Tick.png",
-    "GAMES104/Pictures of GAMES104/2.5.CoreLayer.png",
-    "GAMES104/Pictures of GAMES104/2.3.ResourceManager.png",
-    "GAMES104/Pictures of GAMES104/2.2.CrossReference.png",
-    "GAMES104/Pictures of GAMES104/1.1.OfflineResourceImporting.png",
+    "GAMES104/Lecture 5 渲染中光和材质的数学魔法.md",
+    "GAMES104/Lecture 21 Lumen全局光照方案.md",
+    "GAMES101&202/202 Homework Note.md",
+    "GAMES101&202/101 Homework Note.md",
     "Welcome.md",
+    "Untitled",
+    "GAMES101&202/Pics/hw7.binary.jpg",
+    "GAMES101&202/Pics/hw7.binary2SSP.jpg",
+    "GAMES101&202/Pics/hw7.CompleteShading.png",
+    "GAMES101&202/Pics/hw7.SampleLight.png",
+    "GAMES101&202/Pics/hw6.output.png",
+    "GAMES101&202/Pics/hw7.binary16SSP.jpg",
+    "GAMES101&202/Pics/hw6.GeoStruct.png",
+    "GAMES101/Pics/binary.jpg",
+    "GAMES101&202/Pics/hw5.output.png",
+    "GAMES101&202/Pics/hw5.algorithm.png",
+    "GAMES104/Lecture 4 游戏引擎中的渲染实践.md",
+    "Render Engine Note/Physically-Based Rendering.md",
+    "GAMES101&202/Pics",
+    "Pasted.md",
+    "GAMES101&202",
+    "GAMES104/Lecture 2 引擎架构分层.md",
+    "GAMES104/Pictures of GAMES104/Ch5",
+    "Game Engine Architecture/第1章 导论/1.6 运行时引擎架构.md",
+    "GAMES104/Pictures of GAMES104/Ch4",
+    "GAMES104/Pictures of GAMES104/Ch1",
+    "Render Engine Note/Pictures of PBR",
+    "Render Engine Note",
     "Game Engine Architecture/第1章 导论",
-    "GAMES104/Pictures of GAMES104",
-    "Game Engine Architecture",
-    "GAMES104",
-    "Software Design and Management"
+    "GAMES104/Pictures of GAMES104"
   ]
 }
