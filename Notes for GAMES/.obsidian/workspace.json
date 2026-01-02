@@ -27,24 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GAMES104/Lecture 12 引擎中的粒子和声效系统.md",
+                "file": "GAMES104/Lecture 2 引擎架构分层.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 12 引擎中的粒子和声效系统"
-            }
-          },
-          {
-            "id": "e8d03ca8d9e4b4c0",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.14"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.14"
+              "title": "Lecture 2 引擎架构分层"
             }
           }
         ],
@@ -198,6 +186,10 @@
   },
   "active": "be1a861d1c277d8a",
   "lastOpenFiles": [
+    "GAMES104/Lecture 5 渲染中光和材质的数学魔法.md",
+    "GAMES104/Lecture 4 游戏引擎中的渲染实践.md",
+    "GAMES104/Lecture 21 Lumen全局光照方案.md",
+    "GAMES104/Lecture 12 引擎中的粒子和声效系统.md",
     "Welcome.md",
     "Render Engine Note/Physically-Based Rendering.md",
     "GAMES104/Lecture 2 引擎架构分层.md",
@@ -212,8 +204,6 @@
     "GAMES104/Pictures of GAMES104/Ch12/12.13.AudioFormat.png",
     "GAMES104/Pictures of GAMES104/Ch12/12.12.PCM.png",
     "GAMES104/Pictures of GAMES104/Ch12/12.11.SimulateDataStructure_2.png",
-    "GAMES104/Lecture 12 引擎中的粒子和声效系统.md",
-    "GAMES104/Lecture 21 Lumen全局光照方案.md",
     "GAMES104/Pictures of GAMES104/Ch12",
     "GAMES101&202/202 Homework Note.md",
     "GAMES101&202/101 Homework Note.md"
