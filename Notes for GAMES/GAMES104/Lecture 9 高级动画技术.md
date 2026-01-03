@@ -82,3 +82,58 @@ Unreal Animation BP control:
 Named variables as members in animation blueprint
 - Can be updated through blueprint
 - Can be used anywhere inside the blend tree
+
+## IK (Inverse Kinematics)
+动作要跟环境互动，而环境会对动作有很多约束。
+
+Basic concepts
+- End-effector
+	- 末端效果器
+	- The bone which is expected to be moved to the desired position
+- IK (Inverse Kinematics)
+	- The use of kinematic equations to determine the joint parameters of a manipulator, so that the end effector moves to the desired position
+	- 约束end-effector，然后让你反向去解其他parameters.
+- FK (Forward Kinematics)
+	- The use of kinematic equations to compute the position of the end-effectors from specified values for the joint parameters.
+
+其实从逆向动力学，解出来在3D空间的解，是在一个圆环平面上。就走路动作来说，就会有“外八”或“内八”两种走法。
+所以需要艺术家指定一个reference vector确定三维空间中IK的唯一解。
+![400][9.13.TwoBonesIK_1.png]
+![400][9.12.TwoBonesIK.png]
+
+IK的难度在于，如果IK链的段数过多，反向动力学就会很难。
+这里分享一些IK解法的tips：
+Check reachability of the target
+ ![400][9.14.IK_Tips_1.png]
+
+人体每个joint都有活动范围的，不是在3D空间中自由旋转的，所以要给每个关节设置特有的constraints.
+![400][9.15.JointConstraint.png]
+
+IK算法 - 启发式算法
+Why: too many joints and constraints, difficult to solve with analysis method.
+Basic idea: designed to solve problem in faster and more efficient fashion by sacrificing optimality, accuracy, precision, or completeness for speed.
+- Approximation
+- Global optimality is not garanteed
+- Iteration is usually used with a maximum limit
+
+算法1：CCD and Optimized CCD
+![[9.16.CCD_1.png]]
+![[9.17.CCD_2.png]]
+
+ 算法2：FABRIK
+ ![[9.18.FABRIK_1.png]]
+
+Multiple End-Effector
+更难的地方在于，角色身上的end-effector不止一个。在他们整体驱动下，如何去解IK呢？
+![[9.19.MultipleEndEffector.png]]
+
+行业中最经典的解法：雅各比矩阵的解法
+In vector calculus, the Jacobian Matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives.
+![[9.20.JacobianMatrix.png]]
+
+![[9.21.AnimationPipelineWithIK.png]]
+
+有了IK之后的动画管线：
+1、Clip Blend pose反向算到模型坐标系、世界坐标系
+2、在世界坐标系中，拿各种约束反向计算每根骨骼该如何调整
+3、调整完毕后，提交动画给渲染器，进行蒙皮等一系列顶点处理
