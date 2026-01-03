@@ -137,3 +137,14 @@ In vector calculus, the Jacobian Matrix of a vector-valued function of several v
 1、Clip Blend pose反向算到模型坐标系、世界坐标系
 2、在世界坐标系中，拿各种约束反向计算每根骨骼该如何调整
 3、调整完毕后，提交动画给渲染器，进行蒙皮等一系列顶点处理
+
+## Facial Animation
+Morph target animation instead of skeleton animation
+![[9.22.MorphTargetAnimation.png]]
+
+## Animation Retargeting
+动画重定向
+
+Sharing animation among character. 
+Source character -> Target character
+Source animation -> Target animation
